@@ -1,6 +1,6 @@
 <div align="center">
 <img  alt="logo" height="100"  src="img/logo.png">
-<p>✈ Trillo</p>
+<h2>✈ Trillo</h2>
 </div>
 <br>
 <div>
@@ -14,7 +14,7 @@
 
 <h3>▶ Como rodar:</h3>
 <div>
-    <p>Você pode acessar <a href="">clicando aqui</a>.</p>
+    <p>Você pode acessar <a href="https://bncblnc.github.io/trillo/">clicando aqui</a>.</p>
 </div>
 <hr>
 <div align="center">
