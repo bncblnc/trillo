@@ -59,3 +59,12 @@ body {
 
   min-height: 100vh;
 }
+
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+  visibility: hidden;
+}
