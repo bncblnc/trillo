@@ -48,10 +48,16 @@
   justify-content: space-between;
 }
 
-.hotel-view {
+main {
   background-color: #fff;
   flex: 1;
-  opacity: 1;
+}
+
+.hotel-view,
+.flight-view,
+.car-view,
+.tours-view {
+  width: 100%;
 }
 
 .detail {
