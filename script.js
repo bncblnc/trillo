@@ -8,7 +8,9 @@ const navFlight = document.getElementById("flight");
 const navCar = document.getElementById("car");
 const navTours = document.getElementById("tours");
 
-//side-nav__item--active
+const accordion = document.querySelectorAll(".accordion__item");
+
+// NAVIGATION
 
 navHotel.addEventListener("click", openSection);
 navFlight.addEventListener("click", openSection);
@@ -53,3 +55,12 @@ function resetNav() {
   navCar.classList.remove("side-nav__item--active");
   navTours.classList.remove("side-nav__item--active");
 }
+
+// ACCORDION
+
+accordion.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    const item = e.target.closest(".accordion__item");
+    item.classList.toggle("accordion__open");
+  });
+});

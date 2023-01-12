@@ -108,7 +108,7 @@
                   alt="Photo of hotel 1"
                   class="gallery__photo"
                 />
-                <div class="gallery__caption">TESTE</div>
+                <div class="gallery__caption">The hotel</div>
               </figure>
 
               <figure class="gallery__item">
@@ -117,7 +117,7 @@
                   alt="Photo of hotel 2"
                   class="gallery__photo"
                 />
-                <div class="gallery__caption">TESTE</div>
+                <div class="gallery__caption">The pool</div>
               </figure>
 
               <figure class="gallery__item">
@@ -126,7 +126,7 @@
                   alt="Photo of hotel 3"
                   class="gallery__photo"
                 />
-                <div class="gallery__caption">TESTE</div>
+                <div class="gallery__caption">Suite view</div>
               </figure>
             </div>
 
@@ -424,7 +424,7 @@
                 <h3 class="airport__title">Nearest Airport</h3>
                 <p>Gago Coutinho Airport | Faro Airport (FAO)</p>
                 <p>
-                  <span class="airport__distance">39.6km</span> to your
+                  <span class="airport__distance">39.6 km</span> to your
                   destination
                 </p>
 
@@ -454,72 +454,160 @@
               </div>
             </div>
 
-            <div class="feature">
-              <div class="feature__item">
-                <img />
-                <p class="feature__text">Free cancellation</p>
-              </div>
-              <div class="feature__item">
-                <img />
-                <p class="feature__text">Clean cars</p>
-              </div>
-              <div class="feature__item">
-                <img />
-                <p class="feature__text">24/7 customer service</p>
-              </div>
-            </div>
+            <div class="car-container">
+              <div class="car-details">
+                <div class="feature">
+                  <div class="feature__item">
+                    <svg class="feature__icon">
+                      <use
+                        xlink:href="img/sprite.svg#icon-calendar-times-o"
+                      ></use>
+                    </svg>
+                    <p class="feature__title">Free cancellation</p>
+                    <p>
+                      Reschedule or cancel your rental at no additional cost.
+                    </p>
+                  </div>
 
-            <div class="cars">
-              <div class="cars__box">
-                <img />
-                <p class="cars__category">Economy</p>
-                <p class="cars__description">2 Adults, 2 Bags</p>
-                <p class="cars__price">$11/day</p>
-              </div>
-              <div class="cars__box">
-                <img />
-                <p class="cars__category">Standard</p>
-                <p class="cars__description">5 Adults, 3 Bags</p>
-                <p class="cars__price">$15/day</p>
-              </div>
-              <div class="cars__box">
-                <img />
-                <p class="cars__category">Premium SUV</p>
-                <p class="cars__description">5 Adults, 5 Bags</p>
-                <p class="cars__price">$48/day</p>
-              </div>
-            </div>
-            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                  <div class="feature__item">
+                    <svg class="feature__icon">
+                      <use xlink:href="img/sprite.svg#icon-auto_awesome"></use>
+                    </svg>
+                    <p class="feature__title">Clean cars</p>
+                    <p>
+                      Sanitized and clean cars for the safety of your family.
+                    </p>
+                  </div>
 
-            <div class="accordion">
-              <button class="btn__accordion">
-                What do I need to rent a car?
-              </button>
-              <div class="accordion__answer">
-                <ul>
-                  <li>Your passport</li>
-                  <li>Your voucher</li>
-                  <li>A driver’s license for each driver</li>
-                  <li>The main driver’s credit card</li>
-                </ul>
+                  <div class="feature__item">
+                    <svg class="feature__icon">
+                      <use xlink:href="img/sprite.svg#icon-headset_mic"></use>
+                    </svg>
+                    <p class="feature__title">24/7 customer service</p>
+                    <p>We're here to help if you need it.</p>
+                  </div>
+                </div>
+
+                <div class="cars">
+                  <div class="cars__box">
+                    <img
+                      src="../img/cars-1.jpg"
+                      alt="Car Photo"
+                      class="cars__img"
+                    />
+                    <p class="cars__category">Economy</p>
+                    <p class="cars__description">2 Adults, 2 Bags</p>
+                    <p class="cars__price">$11/day</p>
+                  </div>
+                  <div class="cars__box">
+                    <img
+                      src="../img/cars-2.jpg"
+                      alt="Car Photo"
+                      class="cars__img"
+                    />
+                    <p class="cars__category">Mini</p>
+                    <p class="cars__description">2 Adults, 2 Bags</p>
+                    <p class="cars__price">$14/day</p>
+                  </div>
+                  <div class="cars__box">
+                    <img
+                      src="../img/cars-3.jpg"
+                      alt="Car Photo"
+                      class="cars__img"
+                    />
+                    <p class="cars__category">Standard</p>
+                    <p class="cars__description">5 Adults, 3 Bags</p>
+                    <p class="cars__price">$15/day</p>
+                  </div>
+                  <div class="cars__box">
+                    <img
+                      src="../img/cars-4.jpg"
+                      alt="Car Photo"
+                      class="cars__img"
+                    />
+                    <p class="cars__category">Intermediate</p>
+                    <p class="cars__description">5 Adults, 3 Bags</p>
+                    <p class="cars__price">$27/day</p>
+                  </div>
+                  <div class="cars__box">
+                    <img
+                      src="../img/cars-5.jpg"
+                      alt="Car Photo"
+                      class="cars__img"
+                    />
+                    <p class="cars__category">SUV</p>
+                    <p class="cars__description">5 Adults, 4 Bags</p>
+                    <p class="cars__price">$35/day</p>
+                  </div>
+                  <div class="cars__box">
+                    <img
+                      src="../img/cars-6.jpg"
+                      alt="Car Photo"
+                      class="cars__img"
+                    />
+                    <p class="cars__category">Premium</p>
+                    <p class="cars__description">5 Adults, 4 Bags</p>
+                    <p class="cars__price">$70/day</p>
+                  </div>
+                </div>
+                <button class="btn-inline">Show all <span>&rarr;</span></button>
               </div>
 
-              <button class="btn__accordion">
-                Can I book a rental car for someone else?
-              </button>
-              <div class="accordion__answer">
-                <p>Can I book a rental car for someone else?</p>
-              </div>
+              <div class="accordion">
+                <p class="accordion__title">Frequently asked questions</p>
+                <div class="accordion__item">
+                  <p class="accordion__question">
+                    What do I need to rent a car?
+                  </p>
+                  <div class="accordion__answer">
+                    <ul>
+                      <li>Your passport</li>
+                      <li>Your voucher</li>
+                      <li>A driver’s license for each driver</li>
+                      <li>The main driver’s credit card</li>
+                    </ul>
+                  </div>
+                </div>
 
-              <button class="btn__accordion">
-                Am I old enough to rent a car?
-              </button>
-              <div class="accordion__answer">
-                <p>
-                  Most companies will let you rent a car if you’re at least 21,
-                  and some will even rent to younger drivers. However, if you’re
-                  under 25, you might have to pay a "young driver fee."
-                </p>
+                <div class="accordion__item">
+                  <p class="accordion__question">
+                    Can I book a rental car for someone else?
+                  </p>
+                  <div class="accordion__answer">
+                    <p>
+                      Of course. Just put their info on the "Driver details"
+                      form when booking the car.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <p class="accordion__question">
+                    Am I old enough to rent a car?
+                  </p>
+                  <div class="accordion__answer">
+                    <p>
+                      Most companies will let you rent a car if you’re at least
+                      21, and some will even rent to younger drivers. However,
+                      if you’re under 25, you might have to pay a "young driver
+                      fee."
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <p class="accordion__question">
+                    Can I rent a car without a credit card?
+                  </p>
+                  <div class="accordion__answer">
+                    <p>
+                      No. At the counter, you will be required to present a
+                      valid and personal credit card (issued by a banking
+                      institution) with enough funds to block the security
+                      deposit.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
