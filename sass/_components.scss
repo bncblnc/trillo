@@ -813,9 +813,9 @@
   }
 
   &__icon {
-    margin: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    margin: 1.25rem;
+    width: 3.5rem;
+    height: 3.5rem;
     fill: var(--color-primary);
     z-index: 100;
   }
@@ -855,17 +855,17 @@
     box-shadow: var(--shadow-medium);
     overflow: hidden;
     border-radius: 1rem;
-    transition: all 0.5s;
     cursor: pointer;
   }
 
-  &__box:hover {
-    transform: translateY(-1.5rem);
+  &__box:hover &__img {
+    transform: scale(1.2);
   }
 
   &__img {
     width: 13rem;
     margin-bottom: 1.5rem;
+    transition: all 0.5s;
   }
 
   &__category {
@@ -920,6 +920,7 @@
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;
+    transition: all 0.2s;
 
     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
       background-color: var(--color-primary);
@@ -972,5 +973,130 @@
       mask-size: cover;
       background-image: none;
     }
+  }
+}
+
+///////////////////////////////////////////
+//TOURS
+.tour-container {
+  background-color: var(--color-grey-light-1);
+  width: 100%;
+  padding: 3rem 4rem;
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.tours-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-medium);
+  font-size: 1.5rem;
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: translateY(-1.5rem);
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    width: 90%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--color-primary);
+
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid var(--color-primary);
+  }
+
+  &__type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    width: 30rem;
+    padding: 0.5rem 4rem;
+    color: #fff;
+    position: absolute;
+    top: 12%;
+    right: -32%;
+    transform: rotate(40deg);
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16),
+      0 0.3rem 0.6rem rgba(0, 0, 0, 0.23);
+  }
+
+  &__icon-type {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+  }
+
+  &__water {
+    background-color: #3b5bdb;
+  }
+
+  &__adventure {
+    background-color: #2f9e44;
+  }
+
+  &__guided {
+    background-color: #f76707;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__icon-time {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-primary);
+  }
+
+  &__price {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__price span {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: var(--color-primary);
   }
 }
