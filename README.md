@@ -8,8 +8,16 @@
     <h3>💻 TECNOLOGIAS:</h3>
     <img  alt="HTML" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
     <img alt="Sass" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+    <img  alt="Js" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
     <br><br>
     <p>Desenvolvido durante o curso "Advanced CSS and Sass: Flexbox, Grid,Animations and More!" na plataforma Udemy. </p>
+    <p>Após o curso, adicionei ao projeto as seguintes features:
+    <br/><br/>
+    🔸 Lógica para o funcionamento da sidebar e a criação das páginas: Flight, Car rental e Tours.  <br/>
+    🔸 Menu dropdown dos bookmarks, mensagens e opções de usuário.<br/>
+    🔸 Sugestões de pesquisa ao clicar no search.<br/>
+    </p>
+
 </div>
 
 <h3>▶ Como rodar:</h3>
