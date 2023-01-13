@@ -64,3 +64,9 @@ accordion.forEach((item) => {
     item.classList.toggle("accordion__open");
   });
 });
+
+//SEARCH
+
+document.querySelector(".search__input").addEventListener("focus", function () {
+  console.log("teste");
+});
