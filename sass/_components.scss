@@ -286,6 +286,11 @@
       font-size: 1.8rem;
       padding: 1.25rem 2rem;
     }
+
+    @media only screen and (max-width: 26.25em) {
+      font-size: 1.4rem;
+      padding: 1.25rem 1rem;
+    }
   }
 
   &__stars {
@@ -298,16 +303,29 @@
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: 26.25em) {
+      width: 1rem;
+      height: 1rem;
+    }
   }
 
   &__location {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 26.25em) {
+      font-size: 1rem;
+    }
   }
 
   &__icon-location {
     margin-right: 0.5rem;
+
+    @media only screen and (max-width: 26.25em) {
+      margin-right: 0.2rem;
+    }
   }
 
   &__rating {
@@ -325,6 +343,11 @@
     @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
     }
+
+    @media only screen and (max-width: 26.25em) {
+      padding: 0 1rem;
+      margin-left: 1rem;
+    }
   }
 
   &__rating-average {
@@ -334,6 +357,10 @@
 
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 26.25em) {
+      font-size: 1.6rem;
     }
   }
 
@@ -658,14 +685,31 @@
 //FLIGHTS
 .flight-container {
   display: flex;
+  background-color: var(--color-grey-light-1);
+  padding: 2rem 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 2rem 0;
+  }
 }
 
 .flights {
   width: 60%;
   padding: 2rem 3rem;
-  background-color: var(--color-grey-light-1);
   font-size: 1.4rem;
   text-align: right;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+  }
 
   &__category {
     text-align: left;
@@ -692,6 +736,10 @@
     font-size: 1.3rem;
     letter-spacing: 1px;
     text-align: center;
+
+    @media only screen and (max-width: 26.25em) {
+      font-size: 1.1rem;
+    }
   }
 
   &__outbound {
@@ -722,6 +770,10 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-primary);
+
+    @media only screen and (max-width: 26.25em) {
+      font-size: 1.3rem;
+    }
   }
 
   &__travel {
@@ -742,6 +794,33 @@
   align-items: center;
   padding: 2rem 1rem;
   font-size: 1.4rem;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80%;
+    }
+  }
 
   &__img {
     width: 50%;
@@ -783,12 +862,22 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
 }
 
 .car-details {
   width: 100%;
   font-size: 1.4rem;
   text-align: right;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .feature {
@@ -798,10 +887,13 @@
   justify-content: space-between;
   text-align: center;
   font-size: 1.3rem;
-  // border: 2px solid var(--color-primary-light-2);
   padding: 2rem 1rem;
-  // border-radius: 2rem;
   margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0;
+    font-size: 1.1rem;
+  }
 
   &__item {
     display: flex;
@@ -818,6 +910,12 @@
     height: 3.5rem;
     fill: var(--color-primary);
     z-index: 100;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 1rem;
+    }
   }
 
   &__item::before {
@@ -830,6 +928,11 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @media only screen and (max-width: $bp-small) {
+      width: 5rem;
+      height: 5rem;
+    }
   }
 
   &__title {
@@ -837,6 +940,10 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -849,8 +956,14 @@
   text-align: left;
   margin-bottom: 2rem;
 
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__box {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     box-shadow: var(--shadow-medium);
     overflow: hidden;
@@ -864,6 +977,7 @@
 
   &__img {
     width: 13rem;
+    align-self: center;
     margin-bottom: 1.5rem;
     transition: all 0.5s;
   }
@@ -993,6 +1107,14 @@
   column-gap: 4rem;
   row-gap: 4rem;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -1057,6 +1179,31 @@
     transform: rotate(40deg);
     box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16),
       0 0.3rem 0.6rem rgba(0, 0, 0, 0.23);
+
+    @media only screen and (max-width: $bp-largest) {
+      top: 12%;
+      right: -27%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 10%;
+      right: -15%;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+      top: 10%;
+      right: -20%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 13%;
+      right: -28%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 13%;
+      right: -15%;
+    }
   }
 
   &__icon-type {
