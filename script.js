@@ -10,6 +10,9 @@ const navTours = document.getElementById("tours");
 
 const accordion = document.querySelectorAll(".accordion__item");
 
+const search = document.querySelector(".search__input");
+const searchSuggestion = document.querySelector(".search__suggestion");
+
 // NAVIGATION
 
 navHotel.addEventListener("click", openSection);
@@ -66,7 +69,9 @@ accordion.forEach((item) => {
 });
 
 //SEARCH
+search.addEventListener("focus", toggleSearchSuggestion);
+search.addEventListener("blur", toggleSearchSuggestion);
 
-document.querySelector(".search__input").addEventListener("focus", function () {
-  console.log("teste");
-});
+function toggleSearchSuggestion() {
+  searchSuggestion.classList.toggle("search__hidden");
+}
