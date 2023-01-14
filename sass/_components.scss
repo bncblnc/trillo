@@ -1233,7 +1233,7 @@
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;
-    transition: all 0.5s;
+    transition: all 0.2s;
 
     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
       background-color: var(--color-primary);
@@ -1257,7 +1257,7 @@
   &__answer {
     height: auto;
     max-height: 0;
-    transition: all 0.5s;
+    transition: all 0.2s;
 
     & ul {
       margin-right: 2rem;

@@ -22,7 +22,7 @@
 
 <h3>▶ Como rodar:</h3>
 <div>
-    <p>Você pode acessar <a href="https://bncblnc.github.io/trillo/">clicando aqui</a>.</p>
+    <p>Você pode acessar <a href="https://trillo-lyart.vercel.app/">clicando aqui</a>.</p>
 </div>
 <hr>
 <div align="center">
