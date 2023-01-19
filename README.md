@@ -1,5 +1,5 @@
 <div align="center">
-<img  alt="logo" height="100"  src="img/logo.png">
+<img  alt="logo" height="100"  src="img/logo-readme.png">
 <h2>✈ Trillo</h2>
 </div>
 <br>
