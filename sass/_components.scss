@@ -204,7 +204,7 @@
 .book-options,
 .msg-options {
   position: absolute;
-  max-height: 0;
+  max-height: 0px;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
@@ -231,7 +231,7 @@
   }
 }
 
-.bookings {
+.bookmarks {
   position: relative;
 
   &:hover .book-options {

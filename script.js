@@ -13,6 +13,13 @@ const accordion = document.querySelectorAll(".accordion__item");
 const search = document.querySelector(".search__input");
 const searchSuggestion = document.querySelector(".search__suggestion");
 
+const user = document.querySelector(".user-nav__user");
+const userExpand = document.querySelector(".user-options");
+const bookmarks = document.querySelector(".bookmarks");
+const bookmarksExpand = document.querySelector(".book-options");
+const messages = document.querySelector(".messages");
+const messagesExpand = document.querySelector(".msg-options");
+
 // NAVIGATION
 
 navHotel.addEventListener("click", openSection);
@@ -75,3 +82,22 @@ search.addEventListener("blur", toggleSearchSuggestion);
 function toggleSearchSuggestion() {
   searchSuggestion.classList.toggle("search__hidden");
 }
+
+// DROPDOWN FOR MOBILE
+user.addEventListener("click", () =>
+  userExpand.style.maxHeight == "0px"
+    ? (userExpand.style.maxHeight = "100rem")
+    : (userExpand.style.maxHeight = "0px")
+);
+
+bookmarks.addEventListener("click", () =>
+  bookmarksExpand.style.maxHeight == "0px"
+    ? (bookmarksExpand.style.maxHeight = "100rem")
+    : (bookmarksExpand.style.maxHeight = "0px")
+);
+
+messages.addEventListener("click", () =>
+  messagesExpand.style.maxHeight == "0px"
+    ? (messagesExpand.style.maxHeight = "100rem")
+    : (messagesExpand.style.maxHeight = "0px")
+);
