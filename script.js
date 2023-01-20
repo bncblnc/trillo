@@ -106,14 +106,14 @@ function dropdown(e) {
       return;
   }
 
-  if (expandEl.style.maxHeight === "0px") {
+  if (expandEl.classList.contains("closed")) {
     clearExpand();
-    expandEl.style.maxHeight = "100rem";
-  } else expandEl.style.maxHeight = "0px";
+    expandEl.classList.remove("closed");
+  } else expandEl.classList.add("closed");
 }
 
 function clearExpand() {
-  messagesExpand.style.maxHeight = "0px";
-  userExpand.style.maxHeight = "0px";
-  bookmarksExpand.style.maxHeight = "0px";
+  messagesExpand.classList.add("closed");
+  userExpand.classList.add("closed");
+  bookmarksExpand.classList.add("closed");
 }

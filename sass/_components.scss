@@ -196,7 +196,7 @@
 .book-options,
 .msg-options {
   position: absolute;
-  max-height: 0px;
+  max-height: 100rem;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
@@ -221,6 +221,10 @@
       }
     }
   }
+}
+
+.closed {
+  max-height: 0px;
 }
 
 .user-nav__user,
