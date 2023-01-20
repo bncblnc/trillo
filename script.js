@@ -87,6 +87,7 @@ function toggleSearchSuggestion() {
 user.addEventListener("click", dropdown);
 bookmarks.addEventListener("click", dropdown);
 messages.addEventListener("click", dropdown);
+window.addEventListener("click", closeDropdown);
 
 function dropdown(e) {
   const target = e.currentTarget;
@@ -116,4 +117,8 @@ function clearExpand() {
   messagesExpand.classList.add("closed");
   userExpand.classList.add("closed");
   bookmarksExpand.classList.add("closed");
+}
+
+function closeDropdown(e) {
+  if (!e.target.closest(".user-nav")) clearExpand();
 }
