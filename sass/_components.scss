@@ -161,14 +161,6 @@
     align-items: center;
   }
 
-  &__user {
-    position: relative;
-
-    &:hover .user-options {
-      max-height: 100rem;
-    }
-  }
-
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
@@ -231,20 +223,10 @@
   }
 }
 
-.bookmarks {
-  position: relative;
-
-  &:hover .book-options {
-    max-height: 100rem;
-  }
-}
-
+.user-nav__user,
+.bookmarks,
 .messages {
   position: relative;
-
-  &:hover .msg-options {
-    max-height: 100rem;
-  }
 }
 
 .book-options,

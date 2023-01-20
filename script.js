@@ -84,20 +84,36 @@ function toggleSearchSuggestion() {
 }
 
 // DROPDOWN FOR MOBILE
-user.addEventListener("click", () =>
-  userExpand.style.maxHeight == "0px"
-    ? (userExpand.style.maxHeight = "100rem")
-    : (userExpand.style.maxHeight = "0px")
-);
+user.addEventListener("click", dropdown);
+bookmarks.addEventListener("click", dropdown);
+messages.addEventListener("click", dropdown);
 
-bookmarks.addEventListener("click", () =>
-  bookmarksExpand.style.maxHeight == "0px"
-    ? (bookmarksExpand.style.maxHeight = "100rem")
-    : (bookmarksExpand.style.maxHeight = "0px")
-);
+function dropdown(e) {
+  const target = e.currentTarget;
+  let expandEl;
 
-messages.addEventListener("click", () =>
-  messagesExpand.style.maxHeight == "0px"
-    ? (messagesExpand.style.maxHeight = "100rem")
-    : (messagesExpand.style.maxHeight = "0px")
-);
+  switch (target) {
+    case user:
+      expandEl = userExpand;
+      break;
+    case bookmarks:
+      expandEl = bookmarksExpand;
+      break;
+    case messages:
+      expandEl = messagesExpand;
+      break;
+    default:
+      return;
+  }
+
+  if (expandEl.style.maxHeight === "0px") {
+    clearExpand();
+    expandEl.style.maxHeight = "100rem";
+  } else expandEl.style.maxHeight = "0px";
+}
+
+function clearExpand() {
+  messagesExpand.style.maxHeight = "0px";
+  userExpand.style.maxHeight = "0px";
+  bookmarksExpand.style.maxHeight = "0px";
+}
